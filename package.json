@@ -1,0 +1,36 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "bin": "./dist/index.js",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec ts-node index.ts",
+    "build": "npx webpack && pkg .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "pkg": "^5.8.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "exceljs": "^4.3.0",
+    "ts-node": "^10.9.1"
+  },
+  "pkg": {
+    "scripts": "./dist/index.js",
+    "targets": [
+      "node16-win-x64"
+    ],
+    "assets": [
+      "dist/**/*"
+    ]
+  }
+}
