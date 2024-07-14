@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec ts-node index.ts",
+    "start": "nodemon --exec tsx index.ts",
     "build": "npx webpack && pkg .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +22,7 @@
   "dependencies": {
     "dayjs": "^1.11.9",
     "exceljs": "^4.3.0",
-    "ts-node": "^10.9.1"
+    "tsx": "^4.16.2"
   },
   "pkg": {
     "scripts": "./dist/index.js",

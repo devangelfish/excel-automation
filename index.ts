@@ -73,7 +73,7 @@ dayjs.locale("ko");
         daysInMonth = dayjs(standardYYYYMM).daysInMonth();
 
         for (let i = 1; i <= daysInMonth; i++) {
-          standardDates.push(dayjs(`2023-06-${i}`).format("YYYY-MM-DD"));
+          standardDates.push(dayjs(`${standardYYYYMM}-${i}`).format("YYYY-MM-DD"));
         }
 
         worksheet.eachRow(function (row, rowNumber) {
